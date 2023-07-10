@@ -15,7 +15,11 @@
     "jsx": "preserve",
     "incremental": true,
     "baseUrl": "./app/",
-    "paths": { "@/configs/*": ["configs/*"] },
+    "paths": {
+      "@/configs/*": ["configs/*"],
+      "@/shared/*": ["shared/*"],
+      "@/services/*": ["services/*"]
+    },
     "plugins": [
       {
         "name": "next"
