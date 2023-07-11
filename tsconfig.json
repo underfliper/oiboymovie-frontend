@@ -18,7 +18,9 @@
     "paths": {
       "@/configs/*": ["configs/*"],
       "@/shared/*": ["shared/*"],
-      "@/services/*": ["services/*"]
+      "@/services/*": ["services/*"],
+      "@/store/*": ["store/*"],
+      "@/utils/*": ["utils/*"]
     },
     "plugins": [
       {

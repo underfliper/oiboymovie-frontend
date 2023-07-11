@@ -18,6 +18,13 @@ export interface IUser {
   updatedAt: Date
 }
 
+export interface IUserState extends Pick<IUser, 'id' | 'email'> {}
+
+export interface IUserInitialState {
+  user: IUserState | null
+  isLoading: boolean
+}
+
 export interface IEditUser {
   email?: string
   firstname?: string
