@@ -10,7 +10,8 @@ import {
 import {
   getAccessTokenFromStorage,
   getRefreshTokenFromStorage,
-  removeTokensFromStorage,
+  removeFromStorage,
+  saveToStorage,
   saveTokensToStorage,
 } from './auth.helper'
 
@@ -18,13 +19,15 @@ import { API_URL, getAuthUrl } from '@/configs/api.config'
 
 export const AuthService = {
   async signin(data: IAuthSignIn): Promise<ITokens> {
+    console.log('URL', `${API_URL}${getAuthUrl('/signin')}`)
+
     const response = await axios.post<ITokens>(
       `${API_URL}${getAuthUrl('/signin')}`,
       data,
     )
 
     if (response.data.accessToken && response.data.refreshToken) {
-      saveTokensToStorage(response.data)
+      saveToStorage(response.data)
     }
 
     return response.data
@@ -37,7 +40,7 @@ export const AuthService = {
     )
 
     if (response.data.accessToken && response.data.refreshToken) {
-      saveTokensToStorage(response.data)
+      saveToStorage(response.data)
     }
 
     return response.data
@@ -60,7 +63,7 @@ export const AuthService = {
   },
 
   logout() {
-    removeTokensFromStorage()
+    removeFromStorage()
   },
 
   async refreshTokens(): Promise<ITokens> {
