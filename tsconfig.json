@@ -16,10 +16,13 @@
     "incremental": true,
     "baseUrl": "./app/",
     "paths": {
+      "@/assets/*": ["assets/*"],
+      "@/components/*": ["components/*"],
       "@/configs/*": ["configs/*"],
       "@/shared/*": ["shared/*"],
       "@/services/*": ["services/*"],
       "@/store/*": ["store/*"],
+      "@/ui/*": ["ui/*"],
       "@/utils/*": ["utils/*"]
     },
     "plugins": [
