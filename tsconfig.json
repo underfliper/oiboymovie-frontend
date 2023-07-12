@@ -19,6 +19,7 @@
       "@/assets/*": ["assets/*"],
       "@/components/*": ["components/*"],
       "@/configs/*": ["configs/*"],
+      "@/hooks/*": ["hooks/*"],
       "@/shared/*": ["shared/*"],
       "@/services/*": ["services/*"],
       "@/store/*": ["store/*"],
