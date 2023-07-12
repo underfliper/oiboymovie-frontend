@@ -1,0 +1,194 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?rcx5hg') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?rcx5hg') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?rcx5hg##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-action {
+  &:before {
+    content: $icon-action; 
+  }
+}
+.icon-adventure {
+  &:before {
+    content: $icon-adventure; 
+  }
+}
+.icon-animation {
+  &:before {
+    content: $icon-animation; 
+  }
+}
+.icon-arrow {
+  &:before {
+    content: $icon-arrow; 
+  }
+}
+.icon-chart {
+  &:before {
+    content: $icon-chart; 
+  }
+}
+.icon-clapper-board {
+  &:before {
+    content: $icon-clapper-board; 
+  }
+}
+.icon-comedy {
+  &:before {
+    content: $icon-comedy; 
+  }
+}
+.icon-crime {
+  &:before {
+    content: $icon-crime; 
+  }
+}
+.icon-documentary {
+  &:before {
+    content: $icon-documentary; 
+  }
+}
+.icon-drama {
+  &:before {
+    content: $icon-drama; 
+  }
+}
+.icon-family {
+  &:before {
+    content: $icon-family; 
+  }
+}
+.icon-fantasy {
+  &:before {
+    content: $icon-fantasy; 
+  }
+}
+.icon-filled-star {
+  &:before {
+    content: $icon-filled-star; 
+  }
+}
+.icon-film {
+  &:before {
+    content: $icon-film; 
+  }
+}
+.icon-fire {
+  &:before {
+    content: $icon-fire; 
+  }
+}
+.icon-history {
+  &:before {
+    content: $icon-history; 
+  }
+}
+.icon-home {
+  &:before {
+    content: $icon-home; 
+  }
+}
+.icon-horror {
+  &:before {
+    content: $icon-horror; 
+  }
+}
+.icon-image {
+  &:before {
+    content: $icon-image; 
+  }
+}
+.icon-music {
+  &:before {
+    content: $icon-music; 
+  }
+}
+.icon-mystery {
+  &:before {
+    content: $icon-mystery; 
+  }
+}
+.icon-pallet {
+  &:before {
+    content: $icon-pallet; 
+  }
+}
+.icon-person {
+  &:before {
+    content: $icon-person; 
+  }
+}
+.icon-romance {
+  &:before {
+    content: $icon-romance; 
+  }
+}
+.icon-sciencefiction {
+  &:before {
+    content: $icon-sciencefiction; 
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search; 
+  }
+}
+.icon-signin {
+  &:before {
+    content: $icon-signin; 
+  }
+}
+.icon-signout {
+  &:before {
+    content: $icon-signout; 
+  }
+}
+.icon-star {
+  &:before {
+    content: $icon-star; 
+  }
+}
+.icon-thriller {
+  &:before {
+    content: $icon-thriller; 
+  }
+}
+.icon-tvmovie {
+  &:before {
+    content: $icon-tvmovie; 
+  }
+}
+.icon-war {
+  &:before {
+    content: $icon-war; 
+  }
+}
+.icon-western {
+  &:before {
+    content: $icon-western; 
+  }
+}
+
