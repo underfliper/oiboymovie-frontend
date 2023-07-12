@@ -7,10 +7,17 @@ html {
   --gradient: linear-gradient(90deg, var(--orange) 0%, var(--tomato) 100%);
   --background: #f5f9fa;
   --background-semi: #fcfdff;
-  --accent: #e2e8ec;
-  --controls: #ced5da;
+  --accent: #dfe5e9;
   --nav-item-hover: #fcfdff;
   --text: #343d3c;
+}
+
+html[data-theme='dark'] {
+  background: var(--background);
+  --background: #272725;
+  --background-semi: #1f211e;
+  --accent: #363731;
+  --text: #d8d6d7;
 }
 
 html,

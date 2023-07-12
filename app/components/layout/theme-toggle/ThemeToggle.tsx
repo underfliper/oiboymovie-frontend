@@ -1,17 +1,23 @@
 import { FC } from 'react'
+import { useTheme } from 'next-themes'
 import Toggle from '@/ui/toggle/Toggle'
 
 import styles from './themeToggle.module.scss'
 
 const ThemeToggle: FC = () => {
+  const { theme, setTheme } = useTheme()
+
   const toggleTheme = () => {
-    // Add theme toggle logic
+    setTheme(theme === 'light' ? 'dark' : 'light')
   }
 
   return (
     <div className={styles.themeToggle}>
-      Dark mode
-      <Toggle handleToggle={toggleTheme} />
+      {theme === 'light' ? 'Dark' : 'Light'} mode
+      <Toggle
+        value={theme === 'light' ? false : true}
+        handleToggle={toggleTheme}
+      />
     </div>
   )
 }
