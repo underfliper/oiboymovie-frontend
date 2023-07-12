@@ -1,0 +1,41 @@
+.wrapper {
+  position: relative;
+}
+
+.toggle {
+  height: 0;
+  width: 0;
+  display: none;
+
+  &:checked + .label .button {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 65px;
+  height: 35px;
+  background: var(--controls);
+  border-radius: 100px;
+  position: relative;
+
+  &:active .button {
+    width: 35px;
+  }
+}
+
+.button {
+  content: '';
+  position: absolute;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: var(--text);
+}

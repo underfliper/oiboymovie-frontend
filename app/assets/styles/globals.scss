@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import '../icons/style.scss';
-
 html {
   background: var(--background);
   --orange: #fe9d34;
@@ -9,6 +8,7 @@ html {
   --background: #f5f9fa;
   --background-semi: #fcfdff;
   --accent: #e2e8ec;
+  --controls: #ced5da;
   --text: #343d3c;
 }
 
