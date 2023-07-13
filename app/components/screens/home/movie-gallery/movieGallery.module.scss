@@ -1,0 +1,41 @@
+.movieGallery {
+  width: 100%;
+  height: max-content;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  h2 {
+    color: var(--text);
+    font-size: 36px;
+    font-weight: 600;
+  }
+}
+
+.view_all {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: var(--text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  &:hover {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+}
