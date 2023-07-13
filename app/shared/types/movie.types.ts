@@ -27,7 +27,13 @@ export interface IMovie {
 export interface IMovieShort
   extends Pick<
     IMovie,
-    'id' | 'poster_path' | 'release_date' | 'runtime' | 'title' | 'vote_average'
+    | 'id'
+    | 'poster_path'
+    | 'release_date'
+    | 'runtime'
+    | 'title'
+    | 'vote_average'
+    | 'overview'
   > {}
 
 export interface IMovieReview {
