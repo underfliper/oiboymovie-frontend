@@ -13,7 +13,7 @@ export interface IMovie {
   poster_path: string
   production_companies?: JSON
   production_countries?: JSON
-  release_date: Date
+  release_date: string
   runtime: number
   spoken_languages: JSON
   status: string
