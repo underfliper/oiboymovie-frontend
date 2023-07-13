@@ -3,7 +3,7 @@ import axios from 'axios'
 import { getContentType } from './api.helper'
 import {
   getAccessTokenFromStorage,
-  removeTokensFromStorage,
+  removeFromStorage,
 } from '@/services/auth/auth.helper'
 
 import { API_URL } from '@/configs/api.config'
@@ -39,7 +39,7 @@ instance.interceptors.response.use(
 
         return instance.request(originalRequest)
       } catch (e) {
-        removeTokensFromStorage()
+        removeFromStorage()
       }
     }
 
