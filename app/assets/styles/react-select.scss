@@ -1,0 +1,85 @@
+.custom-select {
+  &__control {
+    padding-left: 10px;
+    background-color: var(--background-semi) !important;
+    box-shadow: none !important;
+    border-color: var(--accent) !important;
+    border-width: 2px !important;
+
+    &--menu-is-open,
+    &--is-focused {
+      border-color: var(--orange) !important;
+    }
+  }
+
+  &__placeholder {
+    color: var(--text) !important;
+    font-weight: 500;
+  }
+
+  &__single-value {
+    color: var(--text) !important;
+    font-weight: 500;
+  }
+
+  &__value-container {
+    padding: 0 !important;
+    cursor: pointer !important;
+  }
+
+  &__indicator-separator {
+    width: 2px !important;
+    background-color: var(--accent) !important;
+  }
+
+  &__indicators {
+    cursor: pointer !important;
+  }
+
+  &__indicator {
+    &:hover {
+      color: var(--orange) !important;
+    }
+  }
+
+  &__menu {
+    background-color: var(--background-semi) !important;
+    scrollbar-color: var(--orange) var(--background-semi);
+    scrollbar-width: thin;
+  }
+
+  &__menu-list {
+    scrollbar-color: var(--orange) var(--background-semi);
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: var(--background-semi);
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: var(--orange);
+    }
+  }
+
+  &__option {
+    font-weight: 500;
+    cursor: pointer !important;
+    transition: all 0.2s ease-in-out;
+
+    &--is-focused,
+    &--is-selected {
+      color: var(--nav-item-hover) !important;
+      background-color: var(--orange) !important;
+    }
+
+    &--is-selected {
+      background-color: var(--orange) !important;
+    }
+  }
+}
