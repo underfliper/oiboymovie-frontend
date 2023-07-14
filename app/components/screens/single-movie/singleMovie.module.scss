@@ -1,0 +1,110 @@
+.singleMovie {
+  height: 100%;
+  display: flex;
+
+  .content {
+    padding: 40px;
+    flex: 1 1 auto;
+    overflow-y: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .about {
+      display: flex;
+      gap: 40px;
+
+      .info {
+        &_heading {
+          margin-bottom: 15px;
+
+          h1 {
+            margin-top: 0;
+            margin-bottom: 10px;
+          }
+
+          .useful {
+            display: flex;
+            gap: 10px;
+
+            .rating {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              font-size: 18px;
+
+              > span {
+                line-height: 18px;
+              }
+            }
+
+            .imdb {
+              margin: 0;
+              padding: 5px;
+              display: flex;
+              align-items: center;
+              font-weight: 700;
+              color: #fff;
+              background: #000;
+              border-radius: 7px;
+              transition: all 0.2s ease-in-out;
+
+              &:hover {
+                color: #000;
+                background: #f5c518;
+              }
+            }
+          }
+        }
+
+        &_table {
+          margin: 0px -25px;
+          border-collapse: separate;
+          border-spacing: 25px 15px;
+        }
+
+        &_row {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 18px;
+
+          &_name {
+            display: flex;
+            white-space: nowrap;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .overview {
+      width: 70%;
+
+      p {
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .similar {
+    min-width: 400px;
+    padding: 0px 40px;
+    border-left: 3px solid var(--accent);
+    overflow-y: auto;
+
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+
+  .similar_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}

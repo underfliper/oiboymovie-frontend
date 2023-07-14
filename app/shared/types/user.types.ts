@@ -40,7 +40,7 @@ export interface IUserShort extends Pick<IUser, 'firstName' | 'lastName'> {}
 export interface IUserReview {
   rating: number
   text?: string
-  publishDate: Date
+  publishDate: string
   movie: IMovieShort
 }
 

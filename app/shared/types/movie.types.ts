@@ -39,7 +39,7 @@ export interface IMovieShort
 export interface IMovieReview {
   rating: number
   text?: string
-  publishDate: Date
+  publishDate: string
   user: IUserShort
 }
 

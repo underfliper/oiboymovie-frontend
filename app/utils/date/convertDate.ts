@@ -12,3 +12,9 @@ export const getShortDate = (date_string: string) => {
     (day.length != 2 ? '0' + day : day)
   )
 }
+
+export const getFullDate = (date_string: string) => {
+  const date = new Date(date_string)
+
+  return `${getShortDate(date_string)}, ${date.toLocaleTimeString()}`
+}
