@@ -9,6 +9,7 @@ import { useRouter } from 'next/router'
 import dynamic from 'next/dynamic'
 import { useQuery } from '@tanstack/react-query'
 import { GenreService } from '@/services/genre/genre.service'
+import Meta from '@/utils/meta/Meta'
 
 const DynamicControls = dynamic(() => import('./controls/Controls'), {
   ssr: false,
@@ -36,18 +37,22 @@ const Movies: FC<IMoviesPage> = ({
   }
 
   return (
-    <div className={styles.movies}>
-      <Heading level="h1" text="Movies" />
-      <DynamicControls query={query} genres={genres} />
-      <Catalog movies={movies} />
-      <div className={styles.pagination}>
-        <Pagination
-          currPage={query.page! - 1}
-          pageCount={Math.ceil(length / query.perPage!)}
-          onPageChange={handlePageChange}
-        />
+    <Meta
+      title="Movies"
+      description="Movie search, user reviews, photos, posters and more.">
+      <div className={styles.movies}>
+        <Heading level="h1" text="Movies" />
+        <DynamicControls query={query} genres={genres} />
+        <Catalog movies={movies} />
+        <div className={styles.pagination}>
+          <Pagination
+            currPage={query.page! - 1}
+            pageCount={Math.ceil(length / query.perPage!)}
+            onPageChange={handlePageChange}
+          />
+        </div>
       </div>
-    </div>
+    </Meta>
   )
 }
 
